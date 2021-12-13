@@ -1,0 +1,13 @@
+{
+  "files.exclude": {
+    ".gitignore": true,
+    ".next": true,
+    "next-env.d.ts": true,
+    "next.config.js": true,
+    "node_modules": true,
+    "public": true,
+    "README.md": true,
+    "yarn.lock": true
+  },
+  "editor.tabSize": 2
+}
