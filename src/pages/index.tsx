@@ -15,9 +15,14 @@ export default function Home() {
   if (loading) return <p>Loading...</p>
   if (error) return <p>Error :(</p>
 
-  return data?.kLogs.map(({ title }, index) => (
-    <div key={index}>
-      <p>{title}</p>
+  return (
+    <div>
+      <h1>K-Log</h1>
+      {data?.kLogs.map(({ title }, index) => (
+        <div key={index}>
+          <p>{title}</p>
+        </div>
+      ))}
     </div>
-  ))
+  )
 }
