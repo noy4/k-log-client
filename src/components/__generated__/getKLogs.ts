@@ -4,14 +4,14 @@
 // This file was automatically generated and should not be edited.
 
 // ====================================================
-// GraphQL query operation: getKLogs
+// GraphQL query operation: GetKLogs
 // ====================================================
 
-export interface getKLogs_kLogs {
+export interface GetKLogs_kLogs {
   __typename: "KLog";
   title: string;
 }
 
-export interface getKLogs {
-  kLogs: getKLogs_kLogs[];
+export interface GetKLogs {
+  kLogs: GetKLogs_kLogs[];
 }
