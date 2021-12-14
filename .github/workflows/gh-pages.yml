@@ -35,9 +35,10 @@ jobs:
       - name: Build
         env:
           NEXT_PUBLIC_SERVER_URL: ${{ secrets.NEXT_PUBLIC_SERVER_URL }}
-        run: yarn build
+        run: |
+          echo NEXT_PUBLIC_SERVER_URL: $NEXT_PUBLIC_SERVER_URL
+          yarn build
       - run: yarn export
-
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
