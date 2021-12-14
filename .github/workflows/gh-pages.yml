@@ -36,7 +36,8 @@ jobs:
         env:
           NEXT_PUBLIC_SERVER_URL: ${{ secrets.NEXT_PUBLIC_SERVER_URL }}
         run: |
-          echo NEXT_PUBLIC_SERVER_URL: $NEXT_PUBLIC_SERVER_URL
+          echo "NEXT_PUBLIC_SERVER_URL: $NEXT_PUBLIC_SERVER_URL"
+          echo "NEXT_PUBLIC_SERVER_URL(env): ${{ env.NEXT_PUBLIC_SERVER_URL }}"
           yarn build
       - run: yarn export
       - name: Deploy
