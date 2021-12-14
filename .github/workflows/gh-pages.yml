@@ -34,7 +34,7 @@ jobs:
       - run: yarn install --frozen-lockfile
       - name: Build
         env:
-          NEXT_PUBLIC_SERVER_URL: ${{secrets.NEXT_PUBLIC_SERVER_URL}}
+          NEXT_PUBLIC_SERVER_URL: ${{ secrets.NEXT_PUBLIC_SERVER_URL }}
         run: yarn build
       - run: yarn export
 
